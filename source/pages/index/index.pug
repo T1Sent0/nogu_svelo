@@ -3,4 +3,18 @@ block title
     | index
 
 block main
-    include ../../components/header/header
+    div.slided-two#slide-two
+        div.content
+            div.title-slide
+                div.image-block
+                    img.gos-kreml(src=require("./img/k.png"))
+                    img.warn(src=require("./img/2.png"))
+                div.image-block
+                    img.date(src=require("./img/date.png"))
+            div.block-buy-ticket
+                a(href="" class="buy-ticket") Купить билет
+                img(src=require("./img/logo.png"))
+            div.block-bottom
+                img(src=require("./img/text_name.png"))
+                img(src=require("./img/logo_kreml.png"))
+                img(src=require("./img/age.png"))

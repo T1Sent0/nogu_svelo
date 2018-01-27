@@ -22,7 +22,7 @@ const common = merge([
             entry: PATHS.source + '/entry/index.js',
             output: {
                 path: PATHS.build,
-                filename: 'js/[name].js'
+                filename: 'js/[name].js',
             },
             plugins: [
                 new HtmlWebpackPlugin({
