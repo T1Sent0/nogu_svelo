@@ -30,13 +30,13 @@ const common = merge([
                     // chunks: ['index', 'common'],
                     template: PATHS.source + '/pages/index/index.pug'
                 }),
-                // new webpack.optimize.CommonsChunkPlugin({
-                //     name: 'common'
-                // })
+                new webpack.optimize.CommonsChunkPlugin({
+                    name: 'common'
+                }),
                 new webpack.ProvidePlugin({
-                    $: 'jquery',
-                    jQuery: 'jquery'
-                })
+                    $: "jquery",
+                    jQuery: "jquery"
+                }),
             ],
         },
         pug(),

@@ -9,7 +9,7 @@ module.exports = function () {
                         loader: 'babel-loader',
                         options: {
                             presets: ['env']
-                        }
+                        },
                     }
                 }
             ]
