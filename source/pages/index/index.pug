@@ -1,38 +1,57 @@
 extends ../../components/head/head
 block title
-    | index
+    | Ногу Свело
 
 block main
+    div.stena
+        img.text-panki(src=require('./img/text-panki.png'))
+        //img.logo(src=require('./img/logo-slide-one.png'))
     div#fullpage
-        div.section.slide-one
-            img.text-panki(src=require('./img/text-panki.png'))
-            img.logo(src=require('./img/logo-slide-one.png'))
-        div.section.slide-two
-            img.human(src=require('./img/human.png') data-depth="0.2")
-            div.stecklo(data-depth="0.1")
-            div.title-slide(data-depth="0.4")
-                div.image-block
+        section.section.slide-one.vertical-scrolling
+            div.steklo(data-depth="-0.05")
+            div.title-slide(data-depth="-0.09")
+                div.image-block(data-depth="-0.10")
                     img.gos-kreml(src=require("./img/k.png"))
-                    img.warn(src=require("./img/2.png"))
                 div.image-block
-                    img.date(src=require("./img/date.png"))
+                    img.warn(src=require("./img/2.png") data-depth="-0.50")
+                    img.date(src=require("./img/date.png") data-depth="0.50")
+            div.block-buy-ticket.animated.pulse(data-depth="0.03")
+                a(href='https://radario.ru/scripts/widget/buy-button-widget.js' data-radario-event-id="248422" class="buy-ticket") Купить билет
+            div.block-bottom(data-depth="0.09")
+                img(src=require("./img/text_name.png"))
+                img(src=require("./img/logo_kreml.png"))
+                //img(src=require("./img/age.png"))
+            div.circle
+                div.arrow
+        //section.section.slide-two.vertical-scrolling
+        //    script(src="https://radario.ru/scripts/widget/buy-button-widget.js" data-class="radarioButtonScript" data-radario-event-id="248422" data-stand-alone="true" data-custom-width="100%")
+            div.circle
+                div.arrow
+        section.section.slide-three.vertical-scrolling
+            div.flex-row
+                div.text-silde.screen-effect-for-text
+                    span.text-color-gray.part-one На главной сцене страны вас ждёт уникальное шоу, где новые песни составят компанию хитам, которые вся страна любит и поёт уже много лет
+                        span.text-color-yellow («Хару Мамбуру», «Идём на восток!», «Лилипутская любовь», «Наши юные смешные голоса»)
+                            span.text-color-gray а живое исполнение гармонично соединится с современными технологиями.
+                    span.part-two.text-color-gray  Противоположности будут жить в любви и гармонии, нереальное станет реальным - потому что в этом суть и природа «Ногу Свело!». Причиной успеха и стабильности группы всегда были и будут её спонтанность и непредсказуемость.
+                    img.no-melancholy(src=require('./img/text.png'))
 
-            //div.humman
+                img.img-slide.screen-effect-for-img(src=require('./img/image-leader-party-two.png'))
 
-        div.section Some section 3
-        div.section Some section 4
-    //div.slided-two#slide-two
-    //    div.content
-    //        div.title-slide
-    //            div.image-block
-    //                img.gos-kreml(src=require("./img/k.png"))
-    //                img.warn(src=require("./img/2.png"))
-    //            div.image-block
-    //                img.date(src=require("./img/date.png"))
-    //        div.block-buy-ticket
-    //            a(href="" class="buy-ticket") Купить билет
-    //            img(src=require("./img/logo.png"))
-    //        div.block-bottom
-    //            img(src=require("./img/text_name.png"))
-    //            img(src=require("./img/logo_kreml.png"))
-    //            img(src=require("./img/age.png"))
+            div.circle
+                div.arrow
+        section.section.slide-four.vertical-scrolling
+            div.flex-row
+                div.text-silde
+                    h1 «Ногу Свело!»
+                    span.text-color-gray.margin - Это группа, которая по словам её лидера Макса Покровского, прожила «30 лет назло шоу-бизнесу»
+                        span.text-color-yellow «Мы бы и рады плыть по течению, но нас постоянно то крутит в водовороте, то выбрасывает на мель, то поднимает на волне. Однако, такое движение только на первый взгляд кажется хаотичным. Но на самом деле, это наш уникальный путь, и мы точно знаем, куда идём»
+                        span.text-color-dark-gray Максим Покровский, создатель группы
+                    img.logo2(src=require("./img/logo.png"))
+                    div.block-buy-ticket
+                        a(href="https://radario.ru/scripts/widget/buy-button-widget.js" data-radario-event-id="248422" class="buy-ticket") Купить билет
+                img.img-slide(src=require('./img/image-leader-party.png'))
+                img.crated-by(src=require('./img/created_by.png'))
+            div.circle
+                div.arrow
+    script(src="https://radario.ru/scripts/widget/buy-button-widget.js " data-radario-event-id="248422" data-class="radarioButtonScript" data-custom-color="#000" data-custom-name="" style="display: none")

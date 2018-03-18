@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --env development",
     "build": "webpack --env production",
     "serv": "static build",
-    "prefixcss": "postcss -s postcss-scss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r source/**/*.sass"
+    "prefixcss": "postcss -s postcss-scss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r source/**/*.scss"
   },
   "author": "Aleksey",
   "license": "ISC",
